@@ -70,7 +70,7 @@ int main(int argc, char* argv[]){
   cmdline::parser p;
   p.add<string>("input", 'i', "input file to be compressed", true);
   p.add<int>("maxsize", 'm', "maximum size to be processed", false, 1000000000);
-  p.set_program_name("gcomp");
+  p.set_program_name("lztree");
 
   if (!p.parse(argc, argv)){
     cerr << p.error() << endl
